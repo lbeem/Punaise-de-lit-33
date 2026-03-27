@@ -1,0 +1,28 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(git credential-manager:*)",
+      "Bash(git credential-wincred:*)",
+      "Bash(cmdkey /list)",
+      "Bash(grep -rL 'class=\"\"site-header\"\"' *.html)",
+      "Bash(grep -rL 'class=\"\"urgence-bandeau\"\"' *.html)",
+      "Bash(grep -rL 'class=\"\"services-grid\"\"' *.html)",
+      "Bash(grep -rL 'class=\"\"zones-content\"\"' *.html)",
+      "Bash(grep -rL 'class=\"\"process-steps\"\"' *.html)",
+      "Bash(grep -rL 'class=\"\"tarifs-grid\"\"' *.html)",
+      "Bash(grep -rL 'class=\"\"faq-list\"\"' *.html)",
+      "Bash(grep -rL '\"\"@type\"\": \"\"FAQPage\"\"' *.html)",
+      "Bash(grep -rL 'class=\"\"section-cta\"\"' *.html)",
+      "Bash(grep -rL 'data-netlify=\"\"true\"\"' *.html)",
+      "Bash(grep -rL 'class=\"\"maillage-villes\"\"' *.html)",
+      "Bash(grep -rL 'class=\"\"footer-grid\"\"' *.html)",
+      "Bash(grep -rL 'class=\"\"villes-proches\"\"' *.html)",
+      "Bash(grep -rL 'class=\"\"quartiers-liste\"\"' *.html)",
+      "Bash(grep -rL 'class=\"\"\"\"maillage-villes\"\"\"\"' *.html)",
+      "Bash(grep -rL 'class=\"\"\"\"process-steps\"\"\"\"' *.html)",
+      "Bash(grep -rL 'class=\"\"\"\"tarifs-grid\"\"\"\"' *.html)",
+      "Bash(grep -rL 'class=\"\"\"\"site-header\"\"\"\"' *.html)",
+      "Bash(grep -rL 'class=\"\"\"\"section-cta\"\"\"\"' *.html)"
+    ]
+  }
+}
