@@ -22,7 +22,8 @@
       "Bash(grep -rL 'class=\"\"\"\"process-steps\"\"\"\"' *.html)",
       "Bash(grep -rL 'class=\"\"\"\"tarifs-grid\"\"\"\"' *.html)",
       "Bash(grep -rL 'class=\"\"\"\"site-header\"\"\"\"' *.html)",
-      "Bash(grep -rL 'class=\"\"\"\"section-cta\"\"\"\"' *.html)"
+      "Bash(grep -rL 'class=\"\"\"\"section-cta\"\"\"\"' *.html)",
+      "Bash(powershell -Command \"Get-Command python* 2>&1\")"
     ]
   }
 }
