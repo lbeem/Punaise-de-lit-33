@@ -99,16 +99,16 @@ ul, ol {
 }
 
 .btn-primary {
-  background: var(--color-cta);
-  color: var(--color-white);
+  background: #8b1a32;
+  color: #fff;
 }
 
 .btn-primary:hover {
-  background: var(--color-cta-hover);
-  color: var(--color-white);
+  background: #6e1427;
+  color: #fff;
   text-decoration: none;
   transform: translateY(-1px);
-  box-shadow: 0 4px 12px rgba(231,76,60,0.35);
+  box-shadow: 0 4px 12px rgba(139,26,50,0.35);
 }
 
 .btn-secondary {
@@ -130,12 +130,12 @@ ul, ol {
 
 /* ---- Header ---- */
 .site-header {
-  background: var(--color-primary);
-  color: var(--color-white);
-  position: sticky;
-  top: 0;
+  background: #fff;
+  color: #333;
+  position: static;
   z-index: 100;
-  box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+  box-shadow: 0 1px 4px rgba(0,0,0,0.08);
+  border-bottom: 1px solid #dee2e6;
 }
 
 .header-inner {
@@ -152,7 +152,7 @@ ul, ol {
   display: flex;
   align-items: center;
   gap: 0.75rem;
-  color: var(--color-white);
+  color: #333;
   font-weight: 800;
   font-size: 1.2rem;
   text-decoration: none;
@@ -160,7 +160,7 @@ ul, ol {
 }
 
 .site-logo:hover {
-  color: var(--color-white);
+  color: #8b1a32;
   text-decoration: none;
 }
 
@@ -174,7 +174,8 @@ ul, ol {
   display: block;
   font-size: 0.75rem;
   font-weight: 400;
-  opacity: 0.85;
+  color: #666;
+  opacity: 1;
 }
 
 .site-nav {
@@ -185,7 +186,7 @@ ul, ol {
 }
 
 .site-nav a {
-  color: rgba(255,255,255,0.88);
+  color: #333;
   padding: 0.4rem 0.75rem;
   border-radius: var(--radius);
   font-size: 0.9rem;
@@ -193,8 +194,8 @@ ul, ol {
 }
 
 .site-nav a:hover {
-  background: rgba(255,255,255,0.12);
-  color: var(--color-white);
+  background: rgba(139,26,50,0.08);
+  color: #8b1a32;
   text-decoration: none;
 }
 
@@ -634,9 +635,20 @@ details[open] .faq-question::after {
 
 .form-submit {
   width: 100%;
-  padding: 1rem;
-  font-size: 1.1rem;
+  padding: 16px;
+  font-size: 16px;
+  font-weight: 700;
   margin-top: 0.5rem;
+  background: #8b1a32;
+  color: #fff;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: background var(--transition);
+}
+
+.form-submit:hover {
+  background: #6e1427;
 }
 
 /* ---- Maillage villes ---- */
@@ -992,6 +1004,11 @@ tr:nth-child(even) td {
   font-size: 0.92rem;
 }
 
+/* ---- Sticky CTA mobile ---- */
+.sticky-cta-mobile {
+  display: none;
+}
+
 /* ===================================================
    RESPONSIVE
    =================================================== */
@@ -1007,9 +1024,12 @@ tr:nth-child(even) td {
     gap: 0.15rem;
   }
 
-  .site-nav a {
-    font-size: 0.82rem;
-    padding: 0.3rem 0.6rem;
+  .site-nav a:not([href="/"]) {
+    display: none;
+  }
+
+  .header-cta {
+    display: block !important;
   }
 
   .hero {
@@ -1038,7 +1058,13 @@ tr:nth-child(even) td {
   }
 
   section {
-    padding: 3rem 1rem;
+    padding: 3rem 1.25rem;
+  }
+
+  .section-inner,
+  .hero-inner {
+    padding-left: 0;
+    padding-right: 0;
   }
 
   .footer-bottom {
@@ -1047,15 +1073,38 @@ tr:nth-child(even) td {
   }
 
   .article-body {
-    padding: 2rem 1rem;
+    padding: 2rem 1.25rem;
+  }
+
+  .sticky-cta-mobile {
+    display: block;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background: #8b1a32;
+    color: #fff;
+    text-align: center;
+    padding: 16px;
+    font-weight: 700;
+    font-size: 1rem;
+    z-index: 9999;
+    text-decoration: none;
+    border-top: 2px solid rgba(255,255,255,0.15);
+  }
+
+  .sticky-cta-mobile:hover {
+    background: #6e1427;
+    color: #fff;
+    text-decoration: none;
+  }
+
+  body {
+    padding-bottom: 60px;
   }
 }
 
 @media (max-width: 480px) {
-  .header-cta {
-    display: none;
-  }
-
   .hero-tel {
     font-size: 1.25rem;
   }
