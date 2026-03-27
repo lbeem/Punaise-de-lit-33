@@ -236,11 +236,17 @@ ul, ol {
   font-weight: 800;
   line-height: 1.2;
   margin-bottom: 1rem;
+  color: #ffffff;
+}
+
+.hero p {
+  color: #ffffff;
 }
 
 .hero-accroche {
   font-size: 1.15rem;
-  opacity: 0.9;
+  color: #ffffff;
+  opacity: 1;
   margin-bottom: 2rem;
   max-width: 620px;
   margin-left: auto;
@@ -253,6 +259,18 @@ ul, ol {
   justify-content: center;
   flex-wrap: wrap;
   margin-bottom: 1.75rem;
+}
+
+.hero .btn-primary {
+  background: #8b1a32;
+  color: #ffffff;
+  border: 2px solid rgba(255,255,255,0.3);
+}
+
+.hero .btn-primary:hover {
+  background: #6e1427;
+  color: #ffffff;
+  border-color: rgba(255,255,255,0.5);
 }
 
 .hero-tel {
