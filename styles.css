@@ -1061,6 +1061,20 @@ tr:nth-child(even) td {
    RESPONSIVE
    =================================================== */
 
+/* ---- Grille images article ---- */
+.images-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 16px;
+  margin: 24px 0;
+}
+
+.images-grid img {
+  width: 100%;
+  border-radius: 10px;
+  object-fit: cover;
+}
+
 @media (max-width: 768px) {
   .header-inner {
     flex-wrap: wrap;
@@ -1149,6 +1163,10 @@ tr:nth-child(even) td {
 
   body {
     padding-bottom: 70px;
+  }
+
+  .images-grid {
+    grid-template-columns: 1fr;
   }
 }
 
