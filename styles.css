@@ -1061,6 +1061,21 @@ tr:nth-child(even) td {
    RESPONSIVE
    =================================================== */
 
+/* ---- Maillage interne article ---- */
+.maillage-interne {
+  background: var(--color-bg);
+  border-left: 4px solid #8b1a32;
+  padding: 1.5rem 2rem;
+  margin: 0;
+  text-align: center;
+}
+
+.maillage-interne p {
+  margin-bottom: 1rem;
+  color: var(--color-text);
+  font-size: 1.02rem;
+}
+
 /* ---- Grille images article ---- */
 .images-grid {
   display: grid;
