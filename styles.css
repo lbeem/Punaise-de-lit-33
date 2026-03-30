@@ -367,6 +367,17 @@ p:last-child {
   background: var(--color-white);
 }
 
+/* Content images — max 800px centered */
+.section-intro img,
+main.blog-article > article > img {
+  max-width: 800px;
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+  margin: 24px auto;
+  display: block;
+}
+
 .intro-text {
   max-width: 820px;
   font-size: 1.05rem;
