@@ -275,6 +275,13 @@ ul, ol {
   border: 2px solid rgba(255,255,255,0.3);
 }
 
+.hero .form-submit {
+  display: inline-block;
+  width: auto;
+  min-width: 260px;
+  max-width: 400px;
+}
+
 .hero .btn-primary:hover {
   background: #6e1427;
   color: #ffffff;
@@ -595,7 +602,8 @@ details[open] .faq-question::after {
 
 .cta-subtitle {
   text-align: center;
-  opacity: 0.88;
+  color: #ffffff !important;
+  opacity: 0.85;
   margin-bottom: 2.5rem;
   font-size: 1.05rem;
 }
