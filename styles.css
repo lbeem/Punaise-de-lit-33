@@ -934,6 +934,20 @@ details[open] .faq-question::after {
   padding: 3rem 1.25rem;
 }
 
+/* Blog article content container */
+main.blog-article > article {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 2rem 1.5rem;
+}
+
+/* FAQ content container */
+.faq {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 2rem 1.5rem;
+}
+
 .article-body h2 {
   margin-top: 2.5rem;
   padding-bottom: 0.5rem;
