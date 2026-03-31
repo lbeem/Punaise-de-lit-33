@@ -1072,6 +1072,58 @@ tr:nth-child(even) td {
    RESPONSIVE
    =================================================== */
 
+/* ---- Articles suggérés ---- */
+.articles-suggeres {
+  max-width: 800px;
+  margin: 48px auto;
+  padding: 0 1.25rem;
+}
+
+.articles-suggeres h2 {
+  text-align: center;
+  margin-bottom: 24px;
+}
+
+.suggestions-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+
+.suggestion-card {
+  background: #fff;
+  border: 1px solid #e8e6e1;
+  border-radius: 10px;
+  padding: 24px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.suggestion-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 24px rgba(0,0,0,0.1);
+}
+
+.suggestion-card h3 {
+  font-size: 16px;
+  margin-bottom: 8px;
+}
+
+.suggestion-card h3 a {
+  color: #1a3c34;
+  text-decoration: none;
+}
+
+.suggestion-card h3 a:hover {
+  color: #8b1a32;
+}
+
+.suggestion-card p {
+  font-size: 14px;
+  color: #555;
+  line-height: 1.6;
+}
+
 /* ---- Maillage interne article ---- */
 .maillage-interne {
   background: var(--color-bg);
@@ -1192,6 +1244,10 @@ tr:nth-child(even) td {
   }
 
   .images-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .suggestions-grid {
     grid-template-columns: 1fr;
   }
 }
