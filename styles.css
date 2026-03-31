@@ -1091,10 +1091,12 @@ tr:nth-child(even) td {
 }
 
 .suggestion-card {
+  display: block;
+  text-decoration: none;
   background: #fff;
   border: 1px solid #e8e6e1;
   border-radius: 10px;
-  padding: 24px;
+  overflow: hidden;
   box-shadow: 0 2px 8px rgba(0,0,0,0.06);
   transition: transform 0.3s, box-shadow 0.3s;
 }
@@ -1104,24 +1106,19 @@ tr:nth-child(even) td {
   box-shadow: 0 8px 24px rgba(0,0,0,0.1);
 }
 
+.suggestion-card img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+  display: block;
+}
+
 .suggestion-card h3 {
-  font-size: 16px;
-  margin-bottom: 8px;
-}
-
-.suggestion-card h3 a {
+  padding: 16px;
+  font-size: 15px;
+  font-weight: 600;
   color: #1a3c34;
-  text-decoration: none;
-}
-
-.suggestion-card h3 a:hover {
-  color: #8b1a32;
-}
-
-.suggestion-card p {
-  font-size: 14px;
-  color: #555;
-  line-height: 1.6;
+  margin: 0;
 }
 
 /* ---- Maillage interne article ---- */
