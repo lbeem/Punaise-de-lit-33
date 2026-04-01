@@ -1,5 +1,4 @@
 User-agent: *
 Allow: /
-Disallow: /netlify/
 
 Sitemap: https://punaise-lit-33.fr/sitemap.xml
