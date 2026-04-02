@@ -602,7 +602,7 @@ main.blog-article > article > img {
 
 /* ---- CTA / Formulaire ---- */
 .section-cta {
-  background: #1a3c5e !important;
+  background: #122A43 !important;
   color: var(--color-white);
   padding: 4rem 1.25rem;
 }
