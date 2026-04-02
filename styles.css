@@ -970,7 +970,7 @@ main.blog-article > article {
 
 .faq h2 {
   text-align: center;
-  font-family: Georgia, 'Times New Roman', serif;
+  font-family: var(--font-base);
   max-width: 800px;
   margin: 0 auto 1.5rem;
 }
